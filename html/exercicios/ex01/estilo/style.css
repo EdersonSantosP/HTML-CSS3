@@ -24,6 +24,12 @@ header > h1{
 	background-image: linear-gradient(to left, lightgrey, transparent);
 	text-indent: 8px;
 }
+
+.artigo {
+	background-color: white;
+	border: 1px;
+
+}
 article a, footer a{
 	text-decoration: none;
 	color: black;
