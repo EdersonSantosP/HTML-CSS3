@@ -1,61 +1,193 @@
-@charset= "UTF-8"
+@charset= "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+@font-face {
+	font-family: 'NewPress';
+	src: url('../fonte/NewPress.otf') format('opentype');
+	font-weight: normal;
+}
+:root {
+
+	--cor0: #EEFBFE;
+	--cor1: #CCEFF9;
+	--cor2: #239DFA;
+	--cor3: #1453E3;
+	--cor4: #1720FD;
+
+	--fonte-padrao: arial, verdana, helvetica, sans-serif;
+	--fonte-destaque: 'Abril Fatface' cursive;
+	--fonte-texto: 'Bebas Neue', cursive;
+	--fonte-leitura: 'Cormorant Garamond', cursive;
+	--fonte-noticia: 'NewPress', cursive;
+}
 * {
 	margin: 0px;
 	padding: 0px;
+
 }
+
 body {
-	background-color: lightgray;
+	background-color: var(--cor0);
+	font-family: var(--fonte-padrao);
 }
-header > h1{
-	background-color: darkgrey;
+
+header {
+	background-image: linear-gradient(to bottom, var(--cor4), var(--cor2));
+	min-width: 150px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+header > h1 {
 	color: white;
+	font-family: var(--fonte-destaque);
 	font-size: 3em;
 	font-weight: normal;
-	padding: 10px 0px;
-	text-shadow: 1px 1px 0px rgba(0, 0, 0.267);
+	padding-top: 20px;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
-.sub_title {
-	background-color: darkgrey;
-	color: black;
-	font-size: 16px;
-	font-weight: 5px;
-	padding: 0px;		
-	background-image: linear-gradient(to left, lightgrey, transparent);
+
+header > p {
+	color: white;
+	font-family: var(--fonte-destaque);
+	font-size: 1.2em;
+	font-weight: normal;
+	padding-top: 20px;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0.267);
+}
+
+nav {
+	background-color: var(--cor2);
+	padding: 10px;
+	box-shadow: 1px 1px 0px rgba(0, 0, 0.267);
+}
+
+nav > a {
+	background-color: var(--cor2);
+	padding: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+
+nav > a:hover {
+	background-color: var(--cor3);
+	color: var(--cor1);
+}
+
+main {
+	min-width: 300px;
+	max-width: 1000px;
+	margin: 20px 0px;
+	margin: auto;
+	margin-bottom: 30px;
+	background-color: white;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0.418);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+main  h2  {
+	color: var(--cor4);
+	font-family: var( --fonte-texto);
+	margin: 10px;
+	font-size: 1.8em;
+	font-weight: normal;
+	background-image: linear-gradient(to right, var(--cor1), transparent);
 	text-indent: 8px;
 }
 
-.artigo {
-	background-color: white;
-	border: 1px;
+main  p {
+	margin: 15px 15px 0px;
+	padding: 10px 0px;
+	text-align: justify;
+	text-indent: 25px;
+	line-height: 1.8em;
+	font-size: 1em;
+}
 
-}
-article a, footer a{
-	text-decoration: none;
-	color: black;
-	font-weight: bolder;
-	transition-duration: 0.4s;
-	background-color: lightblue;
-	padding: 2px 6px;
-}
-a:hover {
-	background-color: lightblue;
-	text-decoration: underline;
+main strong {
+	color: var(--cor3);
+	font-weight: bold;
 }
 
 a.externo::after {
 	content: '\1F517';
 }
-article > p {
-	margin: 15px 0px;
-	text-align: justify;
-	text-indent: 30px;
-	line-height: 2em;
-	font-size: 1em;
+
+main a {
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--cor4);
+	background-color: var(--cor1);
+	padding: 2px 6px;
 }
-section img.imagem01 {
+
+main a:hover {
+	text-decoration: underline;
+	color: var(--cor2);
+}
+
+main img {
+	wifth: 100%;
+}
+
+main img.mobira {
 	max-width: 350px;
 	display: block;
 	margin: auto;
+}
+
+main img.nokia-3310 {
+	max-width: 350px;
+	display: block;
+	margin: auto;
+}
+
+main img.windows {
+	display: block;
+	margin: auto;
+}
+
+.video {
+	background-color: var(--cor1);
+	padding: 18px;
+	padding-bottom: 56.5%;
+	position: relative;
+}
+.video > iframe {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 80%;
+}
+
+aside {
+	background-color: var(--cor1);
+	margin: 10px;
+	border-radius: 10px;
+}
+
+aside > h3 {
+	background-color: var(--cor4);
+	color: white;
+	padding: 10px;
+	margin: 10px -1px 0px -1px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+	list-style-type: '\1F4F2\00A0\00A0';
+	list-style-position: inside;
+	columns: 2;
 
 }
+
+
