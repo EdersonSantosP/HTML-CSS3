@@ -166,18 +166,18 @@ main img.windows {
 
 .video {
 	background-color: var(--cor4);
-	margin: -4px 0px 14px 0px;
-	padding-bottom: 56.5%;
+	margin: -6px 0px 12px 0px;
+	padding-bottom: 53.5%;
 	position: relative;
 }
 .video > iframe {
 	position: absolute;
-	margin: 10px;
-	margin: 0px -20px 30px -10px;
-	top: 5%;
-	left: 5%;
-	width: 90%;
-	height: 80%;
+	padding: 10px;
+	margin: 6px 3px 0px 29px;
+	top: 3%;
+	left: 3%;
+	width: 81%;
+	height: 88%;
 }
 
 aside {
