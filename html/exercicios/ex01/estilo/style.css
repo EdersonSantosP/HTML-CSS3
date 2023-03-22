@@ -222,5 +222,5 @@ footer a:hover {
 	background-color: var(--cor2);
 	color: var(--cor4);
 	text-decoration: underline;
-
+	transition-duration: 0.5s;
 }
