@@ -12,6 +12,7 @@ body {
 
 a {
 	color: skyblue;
+	text-decoration: none;
 }
 a:hover {
 
