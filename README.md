@@ -8,4 +8,5 @@
  <li><a href="https://edersonsantosp.github.io/HTML-CSS3/html/desafios/desafio-tabela/desafio-01.html" target="_blank">ex03</a></li>
  <li><a href="https://edersonsantosp.github.io/HTML-CSS3/html/desafios/desafio-tabela/desafio-02.html" target="_blank">ex04</a></li>
  <li><a href="https://edersonsantosp.github.io/HTML-CSS3/html/desafios/desafio-tabela/desafio-03.html" target="_blank">ex05</a></li>
+  <li><a href="https://edersonsantosp.github.io/HTML-CSS3/html/desafios/social/" target="_blank">ex06</a></li>
 </ul>
