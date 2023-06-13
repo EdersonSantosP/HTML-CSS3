@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/*Aprelho em modo retrato* (Portrait)*/
+
+
+body {
+    background: url('../imagens/cev-portrait.jpg');
+    background-position: center bottom;
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/*Aprelho em modo paisagem (landscape)*/
+
+
+body {
+    background: url('../imagens/cev-landscape.jpg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
